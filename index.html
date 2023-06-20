@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <!-- favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <!-- title -->
+    <title>Results summary</title>
+
+    <!-- stylesheets -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="container my-5 rounded-5 mainContainer">
+      <div class="row column-gap-4">
+        <div
+          class="col-lg-4 col-md-6 text-center p-5 rounded-5 score-container"
+        >
+          <h2>Your Result</h2>
+          <div>
+            <div class="score p-5 my-3 rounded-circle">
+              <h1 class="result">--</h1>
+              <p><span>of 100</span></p>
+            </div>
+          </div>
+          <h2 class="remark">Remarks</h2>
+          <p>
+            <span class="remark"> -- </span>
+          </p>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="container p-5">
+            <h2 class="blackText mb-3">Summary</h2>
+            <div class="row row-gap-3">
+              <div
+                class="col-12 d-flex justify-content-between rounded-3 pt-3 reaction"
+              >
+                <p class="reactionP">
+                  <img
+                    class="mx-2"
+                    src="assets/images/icon-reaction.svg"
+                    alt="reaction icon"
+                  />Reaction
+                </p>
+                <p class="blackText memoryResult">-- <span> / 100</span></p>
+              </div>
+              <div
+                class="col-12 d-flex justify-content-between rounded-3 pt-3 memory"
+              >
+                <p class="memoryP">
+                  <img
+                    class="mx-2"
+                    src="assets/images/icon-memory.svg"
+                    alt="memory icon"
+                  />Memory
+                </p>
+                <p class="blackText memoryResult">-- <span> / 100</span></p>
+              </div>
+              <div
+                class="col-12 d-flex justify-content-between rounded-3 pt-3 verbal"
+              >
+                <p class="verbalP">
+                  <img
+                    class="mx-2"
+                    src="assets/images/icon-verbal.svg"
+                    alt="verbal icon"
+                  />Verbal
+                </p>
+                <p class="blackText memoryResult">-- <span> / 100</span></p>
+              </div>
+              <div
+                class="col-12 d-flex justify-content-between rounded-3 pt-3 visual"
+              >
+                <p class="visualP">
+                  <img
+                    class="mx-2"
+                    src="assets/images/icon-visual.svg"
+                    alt="visual icon"
+                  />Visual
+                </p>
+                <p class="blackText memoryResult">-- <span> / 100</span></p>
+              </div>
+              <div class="col-12 d-grid mt-4">
+                <button
+                  id="btn"
+                  class="btn btn-lg rounded-pill p-3"
+                  type="button"
+                >
+                  Continue
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Adonai Jonathan</a>.
+    </div>
+
+    <!-- scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
